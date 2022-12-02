@@ -50,8 +50,8 @@ namespace TestTask
 		{
 			double[] sides = { SideA, SideB, SideC };
 
+			//Сортируем по убыванию
 			Array.Sort(sides);
-			Array.Reverse(sides);
 
 			if (Math.Pow(sides[0], 2) == Math.Pow(sides[1], 2) + Math.Pow(sides[2], 2))
 				return true;
