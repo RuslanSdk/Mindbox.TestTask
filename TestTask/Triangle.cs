@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TestTask
+﻿namespace TestTask
 {
 	/// <summary>
 	/// Треугольник
@@ -50,10 +44,10 @@ namespace TestTask
 		{
 			double[] sides = { SideA, SideB, SideC };
 
-			//Сортируем по убыванию
-			Array.Sort(sides);
+            Array.Sort(sides);
+            Array.Reverse(sides);
 
-			if (Math.Pow(sides[0], 2) == Math.Pow(sides[1], 2) + Math.Pow(sides[2], 2))
+            if (Math.Pow(sides[0], 2) == Math.Pow(sides[1], 2) + Math.Pow(sides[2], 2))
 				return true;
 
 			return false;
