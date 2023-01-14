@@ -1,0 +1,4 @@
+SELECT prod.name, cat.name FROM 
+	(products_categories AS prod_cat RIGHT JOIN 
+		products AS prod ON prod.code = prod_cat.id_prod) 
+	LEFT JOIN categories AS cat ON cat.code = prod_cat.id_cat;
